@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,8 +49,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">MESSAGES</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="compte.html">Se connecter</a>
+            <li id="button_connection"class="nav-item">
+                <a class="nav-link" href="connexion.php">Se connecter</a>
+            </li>
+            <li id="button_deconnection"class="nav-item">
+                <a class="nav-link" href="#"> Se déconnecter </a>
             </li>
         </ul>
       </div>
@@ -127,12 +134,11 @@
   <br>
   <br>
 
-  //footer
   <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
       <div class="container">
           <div class="row row-30">
               <div class="col-md-4 col-xl-5">
-                  <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                  <div class="pr-xl-4"><a class="brand" href="index.php"></a>
                       <p>Ce site est une parodie du site Leboncoin. Son seul but est éducatif. Il entre dans un projet scolaire, module Js.</p>
                       <!-- Rights-->
                       <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>Xavier Maisse</span><span>. </span><span>All Rights Reserved.</span></p>
@@ -179,6 +185,9 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/bootstrap/js/app.js"></script>
   <script src="vendor/bootstrap/js/polyfill.js"></script>
+
+
+  <script src="vendor/bootstrap/js/is_connect.js"></script>
 
 </body>
 
